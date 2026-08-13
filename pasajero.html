@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Pasajero - MC JHOSS</title>
+  <meta name="description" content="Dashboard del pasajero MC JHOSS. Historial, próximos viajes y reservas.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard">
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">MC</div>
+      MC JHOSS
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="pasajero.html" class="active">🏠 Inicio</a></li>
+      <li><a href="rutas.html">🔍 Buscar Rutas</a></li>
+      <li><a href="asientos.html">💺 Mis Asientos</a></li>
+      <li><a href="pagos.html">💳 Pagos</a></li>
+      <li><a href="#">📜 Historial</a></li>
+      <li><a href="#">⚙️ Configuración</a></li>
+      <li><a href="login.html">🚪 Cerrar Sesión</a></li>
+    </ul>
+  </aside>
+
+  <main class="main-content">
+    <div class="page-header">
+      <h1>Bienvenido, Jhoss</h1>
+      <p>Panel del pasajero - Gestiona tus viajes con MC JHOSS</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card blue">
+        <div class="stat-label">Próximos Viajes</div>
+        <div class="stat-value">2</div>
+      </div>
+      <div class="stat-card green">
+        <div class="stat-label">Viajes Realizados</div>
+        <div class="stat-value">12</div>
+      </div>
+      <div class="stat-card orange">
+        <div class="stat-label">Millas Acumuladas</div>
+        <div class="stat-value">1,240</div>
+      </div>
+      <div class="stat-card red">
+        <div class="stat-label">Cupones</div>
+        <div class="stat-value">3</div>
+      </div>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Próximos viajes</span>
+          <a href="rutas.html" class="btn btn-primary btn-sm">Nueva reserva</a>
+        </div>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Ruta</th>
+                <th>Fecha</th>
+                <th>Asiento</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lima → Trujillo</td>
+                <td>15 Ago 2026</td>
+                <td>05</td>
+                <td><span class="badge badge-success">Confirmado</span></td>
+              </tr>
+              <tr>
+                <td>Trujillo → Lima</td>
+                <td>22 Ago 2026</td>
+                <td>12</td>
+                <td><span class="badge badge-warning">Pendiente</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Buscar nuevo viaje</span>
+        </div>
+        <form action="rutas.html" method="get">
+          <div class="form-group">
+            <label class="form-label">Origen</label>
+            <select class="form-select">
+              <option>Lima</option>
+              <option>Trujillo</option>
+              <option>Chiclayo</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Destino</label>
+            <select class="form-select">
+              <option>Trujillo</option>
+              <option>Chiclayo</option>
+              <option>Piura</option>
+              <option>Lima</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Fecha</label>
+            <input type="date" class="form-control" value="2026-08-15">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Buscar Buses</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="card mt-3">
+      <div class="card-header">
+        <span class="card-title">Historial de viajes</span>
+      </div>
+      <div class="table-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Ruta</th>
+              <th>Fecha</th>
+              <th>Bus</th>
+              <th>Asiento</th>
+              <th>Pago</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lima → Chiclayo</td>
+              <td>10 Jul 2026</td>
+              <td>MC JHOSS VIP</td>
+              <td>18</td>
+              <td>Tarjeta</td>
+              <td><span class="badge badge-info">Completado</span></td>
+            </tr>
+            <tr>
+              <td>Chiclayo → Lima</td>
+              <td>15 Jul 2026</td>
+              <td>MC JHOSS Cama</td>
+              <td>22</td>
+              <td>Yape</td>
+              <td><span class="badge badge-info">Completado</span></td>
+            </tr>
+            <tr>
+              <td>Lima → Trujillo</td>
+              <td>02 Jun 2026</td>
+              <td>MC JHOSS Económico</td>
+              <td>07</td>
+              <td>Efectivo</td>
+              <td><span class="badge badge-info">Completado</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

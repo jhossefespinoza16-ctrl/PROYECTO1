@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagos - MC JHOSS</title>
+  <meta name="description" content="Paga tu pasaje de MC JHOSS con tarjeta, efectivo o Yape.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">MC</div>
+        MC JHOSS
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="rutas.html">Rutas</a></li>
+        <li><a href="asientos.html">Asientos</a></li>
+        <li><a href="pagos.html" class="active">Pagos</a></li>
+        <li><a href="login.html" class="btn btn-primary btn-sm">Iniciar Sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="page-header text-center">
+        <h1>Realiza tu pago</h1>
+        <p>Elige el método de pago que prefieras</p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h2 class="card-title mb-3">Método de pago</h2>
+
+          <form action="exito.html" method="get" class="payment-tabs">
+            <input type="radio" name="metodo" id="pay-card" class="hidden" checked>
+            <input type="radio" name="metodo" id="pay-cash" class="hidden">
+            <input type="radio" name="metodo" id="pay-yape" class="hidden">
+
+            <div class="payment-methods">
+              <div class="payment-option">
+                <input type="radio" name="metodo-tab" id="tab-card" checked>
+                <label for="tab-card" class="payment-label" onclick="document.getElementById('pay-card').checked=true">
+                  <span class="payment-icon">💳</span>
+                  Tarjeta
+                </label>
+              </div>
+              <div class="payment-option">
+                <input type="radio" name="metodo-tab" id="tab-cash">
+                <label for="tab-cash" class="payment-label" onclick="document.getElementById('pay-cash').checked=true">
+                  <span class="payment-icon">💵</span>
+                  Efectivo
+                </label>
+              </div>
+              <div class="payment-option">
+                <input type="radio" name="metodo-tab" id="tab-yape">
+                <label for="tab-yape" class="payment-label" onclick="document.getElementById('pay-yape').checked=true">
+                  <span class="payment-icon">📱</span>
+                  Yape
+                </label>
+              </div>
+            </div>
+
+            <div class="payment-content content-card">
+              <div class="form-group">
+                <label class="form-label">Número de tarjeta</label>
+                <input type="text" class="form-control" placeholder="1234 5678 9012 3456" maxlength="19">
+              </div>
+              <div class="grid grid-2">
+                <div class="form-group">
+                  <label class="form-label">Fecha de vencimiento</label>
+                  <input type="text" class="form-control" placeholder="MM/AA" maxlength="5">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">CVV</label>
+                  <input type="text" class="form-control" placeholder="123" maxlength="4">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Nombre del titular</label>
+                <input type="text" class="form-control" placeholder="Como aparece en la tarjeta">
+              </div>
+            </div>
+
+            <div class="payment-content content-cash">
+              <div class="form-group">
+                <label class="form-label">Punto de pago</label>
+                <select class="form-select">
+                  <option>Agencia Lima Centro</option>
+                  <option>Agencia La Victoria</option>
+                  <option>Agencia San Isidro</option>
+                  <option>Terminal Terrestre Plaza Norte</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Nombre de quien pagará</label>
+                <input type="text" class="form-control" placeholder="Nombre completo">
+              </div>
+              <div class="alert" style="background: rgba(245, 158, 11, 0.1); color: var(--warning); padding: 1rem; border-radius: var(--radius); font-weight: 600;">
+                ⚠️ Tienes hasta 4 horas antes de la salida para pagar en efectivo.
+              </div>
+            </div>
+
+            <div class="payment-content content-yape">
+              <div class="text-center mb-3">
+                <div style="width: 200px; height: 200px; background: var(--gray-100); border-radius: var(--radius); margin: 0 auto; display: grid; place-items: center; border: 2px dashed var(--gray-300);">
+                  <div style="text-align: center; color: var(--gray-500);">
+                    <div style="font-size: 3rem;">📱</div>
+                    <p style="font-weight: 700;">QR de Yape</p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Número Yape</label>
+                <input type="tel" class="form-control" placeholder="9xx xxx xxx">
+              </div>
+              <p style="color: var(--gray-500); font-size: 0.875rem;">Escanea el QR desde tu app Yape y confirma el pago.</p>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block mt-3">Pagar S/ 45.00</button>
+          </form>
+        </div>
+
+        <div class="card" style="height: fit-content;">
+          <h2 class="card-title mb-3">Resumen de compra</h2>
+          <div style="margin-bottom: 1rem;">
+            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--gray-200);">
+              <span style="color: var(--gray-600);">Ruta</span>
+              <span style="font-weight: 700;">Lima → Trujillo</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--gray-200);">
+              <span style="color: var(--gray-600);">Bus</span>
+              <span style="font-weight: 700;">MC JHOSS Cama</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--gray-200);">
+              <span style="color: var(--gray-600);">Asiento</span>
+              <span style="font-weight: 700;">05</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--gray-200);">
+              <span style="color: var(--gray-600);">Salida</span>
+              <span style="font-weight: 700;">08:00 PM</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--gray-200);">
+              <span style="color: var(--gray-600);">Subtotal</span>
+              <span style="font-weight: 700;">S/ 45.00</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--gray-200);">
+              <span style="color: var(--gray-600);">IGV (18%)</span>
+              <span style="font-weight: 700;">S/ 8.10</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 1rem 0; font-size: 1.25rem;">
+              <span style="font-weight: 800; color: var(--gray-900);">Total</span>
+              <span style="font-weight: 800; color: var(--primary);">S/ 53.10</span>
+            </div>
+          </div>
+          <a href="asientos.html" class="btn btn-secondary btn-block btn-sm">Volver a asientos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        © 2026 MC JHOSS. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

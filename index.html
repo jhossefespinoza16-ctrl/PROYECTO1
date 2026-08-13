@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MC JHOSS - Sistema de Pasajes Profesional</title>
+  <meta name="description" content="Sistema profesional de venta de pasajes de bus MC JHOSS. Reserva tu asiento, paga con tarjeta, efectivo o Yape.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">MC</div>
+        MC JHOSS
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="rutas.html">Rutas</a></li>
+        <li><a href="asientos.html">Asientos</a></li>
+        <li><a href="pagos.html">Pagos</a></li>
+        <li><a href="login.html" class="btn btn-primary btn-sm">Iniciar Sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Viaja seguro, cómodo y puntual con MC JHOSS</h1>
+      <p>El sistema de pasajes más completo del Perú. Escoge tu bus, tu asiento y paga como prefieras.</p>
+      <div class="hero-btns">
+        <a href="login.html?rol=pasajero" class="btn btn-primary">Comprar Pasaje</a>
+        <a href="rutas.html" class="btn btn-secondary">Ver Rutas</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">¿Por qué elegir MC JHOSS?</h2>
+      <p class="section-subtitle">La mejor experiencia de viaje en un solo lugar</p>
+      <div class="grid grid-4">
+        <div class="card feature-card">
+          <div class="feature-icon">🚌</div>
+          <h3>Variedad de Buses</h3>
+          <p>Compara precios, horarios y servicios para elegir el bus que más te convenga.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon">💺</div>
+          <h3>Selección de Asientos</h3>
+          <p>Visualiza el mapa de asientos en tiempo real: libres, reservados y ocupados.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon">💳</div>
+          <h3>Pagos Flexibles</h3>
+          <p>Paga con tarjeta de crédito/débito, efectivo o Yape desde tu celular.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Viaje Seguro</h3>
+          <p>Conductores certificados, buses revisados y seguimiento en cada ruta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--white);">
+    <div class="container">
+      <h2 class="section-title">Rutas más populares</h2>
+      <p class="section-subtitle">Destinos favoritos de nuestros pasajeros</p>
+      <div class="grid grid-3">
+        <div class="card bus-card">
+          <div class="bus-header">
+            <span class="bus-name">Lima → Trujillo</span>
+            <span class="bus-price">S/ 45</span>
+          </div>
+          <div class="bus-route">
+            <span>🕐 8h 30m</span>
+            <span>📍 560 km</span>
+          </div>
+          <div class="bus-features">
+            <span>WiFi</span>
+            <span>A/C</span>
+            <span>TV</span>
+          </div>
+          <a href="login.html" class="btn btn-primary btn-block">Reservar</a>
+        </div>
+        <div class="card bus-card">
+          <div class="bus-header">
+            <span class="bus-name">Lima → Chiclayo</span>
+            <span class="bus-price">S/ 55</span>
+          </div>
+          <div class="bus-route">
+            <span>🕐 10h 15m</span>
+            <span>📍 770 km</span>
+          </div>
+          <div class="bus-features">
+            <span>WiFi</span>
+            <span>Snack</span>
+            <span>USB</span>
+          </div>
+          <a href="login.html" class="btn btn-primary btn-block">Reservar</a>
+        </div>
+        <div class="card bus-card">
+          <div class="bus-header">
+            <span class="bus-name">Lima → Piura</span>
+            <span class="bus-price">S/ 70</span>
+          </div>
+          <div class="bus-route">
+            <span>🕐 13h 00m</span>
+            <span>📍 990 km</span>
+          </div>
+          <div class="bus-features">
+            <span>Cama</span>
+            <span>WiFi</span>
+            <span>A/C</span>
+          </div>
+          <a href="login.html" class="btn btn-primary btn-block">Reservar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Panel de control por rol</h2>
+      <p class="section-subtitle">Cada usuario tiene su propio dashboard</p>
+      <div class="grid grid-3">
+        <div class="card feature-card">
+          <div class="feature-icon">👤</div>
+          <h3>Pasajero</h3>
+          <p>Busca rutas, elige asientos, realiza pagos y revisa tu historial de viajes.</p>
+          <a href="pasajero.html" class="btn btn-secondary btn-block mt-2">Ver Dashboard</a>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon">🚌</div>
+          <h3>Conductor</h3>
+          <p>Consulta tus rutas asignadas, horarios y el estado de los pasajeros.</p>
+          <a href="conductor.html" class="btn btn-secondary btn-block mt-2">Ver Dashboard</a>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon">⚙️</div>
+          <h3>Administrador</h3>
+          <p>Gestiona buses, rutas, reservas, asientos y reportes de ventas.</p>
+          <a href="administrador.html" class="btn btn-secondary btn-block mt-2">Ver Dashboard</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo" style="color: white; margin-bottom: 1rem;">
+            <div class="logo-icon">MC</div>
+            MC JHOSS
+          </a>
+          <p style="color: var(--gray-400);">Sistema profesional de venta de pasajes. Conectando destinos, uniendo personas.</p>
+        </div>
+        <div>
+          <h4 style="margin-bottom: 1rem;">Pasajero</h4>
+          <ul style="list-style: none; color: var(--gray-400);">
+            <li><a href="rutas.html">Buscar rutas</a></li>
+            <li><a href="asientos.html">Elegir asiento</a></li>
+            <li><a href="pagos.html">Métodos de pago</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="margin-bottom: 1rem;">Empresa</h4>
+          <ul style="list-style: none; color: var(--gray-400);">
+            <li><a href="conductor.html">Conductores</a></li>
+            <li><a href="administrador.html">Administración</a></li>
+            <li><a href="login.html">Iniciar sesión</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="margin-bottom: 1rem;">Contacto</h4>
+          <ul style="list-style: none; color: var(--gray-400);">
+            <li>📞 (01) 234-5678</li>
+            <li>✉️ hola@mcjhoss.pe</li>
+            <li>📍 Lima, Perú</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 MC JHOSS. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

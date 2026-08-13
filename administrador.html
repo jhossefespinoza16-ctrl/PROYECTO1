@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Administrador - MC JHOSS</title>
+  <meta name="description" content="Dashboard del administrador MC JHOSS. Gestión de buses, rutas, reservas y asientos.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard">
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">MC</div>
+      MC JHOSS
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="administrador.html" class="active">🏠 Inicio</a></li>
+      <li><a href="rutas.html">🚌 Buses y Rutas</a></li>
+      <li><a href="asientos.html">💺 Asientos</a></li>
+      <li><a href="#">📊 Reportes</a></li>
+      <li><a href="#">👥 Usuarios</a></li>
+      <li><a href="#">⚙️ Configuración</a></li>
+      <li><a href="login.html">🚪 Cerrar Sesión</a></li>
+    </ul>
+  </aside>
+
+  <main class="main-content">
+    <div class="page-header">
+      <h1>Panel de Administración</h1>
+      <p>Control total de operaciones MC JHOSS</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card blue">
+        <div class="stat-label">Ventas Hoy</div>
+        <div class="stat-value">S/ 8,450</div>
+      </div>
+      <div class="stat-card green">
+        <div class="stat-label">Pasajes Vendidos</div>
+        <div class="stat-value">142</div>
+      </div>
+      <div class="stat-card orange">
+        <div class="stat-label">Buses Activos</div>
+        <div class="stat-value">18</div>
+      </div>
+      <div class="stat-card red">
+        <div class="stat-label">Reservas Pendientes</div>
+        <div class="stat-value">24</div>
+      </div>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Mapa de asientos - Lima → Trujillo</span>
+          <a href="asientos.html" class="btn btn-primary btn-sm">Gestionar</a>
+        </div>
+        <div class="seat-legend" style="justify-content: flex-start; gap: 1rem; margin-bottom: 1rem;">
+          <div class="legend-item"><div class="legend-box free"></div> Libre (26)</div>
+          <div class="legend-item"><div class="legend-box occupied"></div> Ocupado (6)</div>
+          <div class="legend-item"><div class="legend-box reserved"></div> Reservado (2)</div>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0.5rem;">
+          <div style="padding: 0.5rem; background: var(--gray-100); border-radius: var(--radius-sm); text-align: center; font-size: 0.75rem; font-weight: 700;">01</div>
+          <div style="padding: 0.5rem; background: var(--gray-100); border-radius: var(--radius-sm); text-align: center; font-size: 0.75rem; font-weight: 700;">02</div>
+          <div style="padding: 0.5rem; background: var(--gray-100); border-radius: var(--radius-sm); text-align: center; font-size: 0.75rem; font-weight: 700;">03</div>
+          <div style="padding: 0.5rem; background: var(--gray-100); border-radius: var(--radius-sm); text-align: center; font-size: 0.75rem; font-weight: 700;">04</div>
+          <div style="padding: 0.5rem; background: var(--gray-100); border-radius: var(--radius-sm); text-align: center; font-size: 0.75rem; font-weight: 700;">05</div>
+          <div style="padding: 0.5rem; background: var(--gray-100); border-radius: var(--radius-sm); text-align: center; font-size: 0.75rem; font-weight: 700;">06</div>
+          <div style="padding: 0.5rem; background: var(--warning); color: white; border-radius: var(--radius-sm); text-align: center; font-size: 0.75rem; font-weight: 700;">10</div>
+          <div style="padding: 0.5rem; background: var(--warning); color: white; border-radius: var(--radius-sm); text-align: center; font-size: 0.75rem; font-weight: 700;">11</div>
+          <div style="padding: 0.5rem; background: var(--danger); color: white; border-radius: var(--radius-sm); text-align: center; font-size: 0.75rem; font-weight: 700;">14</div>
+          <div style="padding: 0.5rem; background: var(--danger); color: white; border-radius: var(--radius-sm); text-align: center; font-size: 0.75rem; font-weight: 700;">15</div>
+          <div style="padding: 0.5rem; background: var(--danger); color: white; border-radius: var(--radius-sm); text-align: center; font-size: 0.75rem; font-weight: 700;">19</div>
+          <div style="padding: 0.5rem; background: var(--danger); color: white; border-radius: var(--radius-sm); text-align: center; font-size: 0.75rem; font-weight: 700;">31</div>
+          <div style="padding: 0.5rem; background: var(--danger); color: white; border-radius: var(--radius-sm); text-align: center; font-size: 0.75rem; font-weight: 700;">32</div>
+          <div style="padding: 0.5rem; background: var(--gray-100); border-radius: var(--radius-sm); text-align: center; font-size: 0.75rem; font-weight: 700;">33</div>
+          <div style="padding: 0.5rem; background: var(--gray-100); border-radius: var(--radius-sm); text-align: center; font-size: 0.75rem; font-weight: 700;">34</div>
+          <div style="padding: 0.5rem; background: var(--gray-100); border-radius: var(--radius-sm); text-align: center; font-size: 0.75rem; font-weight: 700;">35</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Reservas recientes</span>
+        </div>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Código</th>
+                <th>Cliente</th>
+                <th>Ruta</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#RES-8921</td>
+                <td>Jhoss Espinoza</td>
+                <td>Lima → Trujillo</td>
+                <td><span class="badge badge-success">Pagado</span></td>
+              </tr>
+              <tr>
+                <td>#RES-8920</td>
+                <td>María Quispe</td>
+                <td>Lima → Trujillo</td>
+                <td><span class="badge badge-success">Pagado</span></td>
+              </tr>
+              <tr>
+                <td>#RES-8919</td>
+                <td>Carlos Ruiz</td>
+                <td>Lima → Trujillo</td>
+                <td><span class="badge badge-warning">Pendiente</span></td>
+              </tr>
+              <tr>
+                <td>#RES-8918</td>
+                <td>Ana García</td>
+                <td>Trujillo → Lima</td>
+                <td><span class="badge badge-success">Pagado</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mt-3">
+      <div class="card-header">
+        <span class="card-title">Gestión de buses y rutas</span>
+        <a href="rutas.html" class="btn btn-primary btn-sm">Ver todas</a>
+      </div>
+      <div class="table-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Bus</th>
+              <th>Ruta</th>
+              <th>Salida</th>
+              <th>Asientos Libres</th>
+              <th>Asientos Ocupados</th>
+              <th>Asientos Reservados</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MC JHOSS Cama - B-124</td>
+              <td>Lima → Trujillo</td>
+              <td>08:00 PM</td>
+              <td>26</td>
+              <td>6</td>
+              <td>2</td>
+              <td><span class="badge badge-success">Activo</span></td>
+            </tr>
+            <tr>
+              <td>MC JHOSS VIP - B-098</td>
+              <td>Lima → Chiclayo</td>
+              <td>07:30 PM</td>
+              <td>18</td>
+              <td>12</td>
+              <td>4</td>
+              <td><span class="badge badge-success">Activo</span></td>
+            </tr>
+            <tr>
+              <td>MC JHOSS Económico - B-056</td>
+              <td>Lima → Trujillo</td>
+              <td>10:00 PM</td>
+              <td>32</td>
+              <td>3</td>
+              <td>1</td>
+              <td><span class="badge badge-warning">Pocos asientos</span></td>
+            </tr>
+            <tr>
+              <td>MC JHOSS Cama - B-112</td>
+              <td>Lima → Piura</td>
+              <td>06:00 PM</td>
+              <td>28</td>
+              <td>5</td>
+              <td>3</td>
+              <td><span class="badge badge-success">Activo</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

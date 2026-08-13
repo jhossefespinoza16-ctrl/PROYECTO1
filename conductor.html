@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Conductor - MC JHOSS</title>
+  <meta name="description" content="Dashboard del conductor MC JHOSS. Rutas asignadas, horarios y pasajeros.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard">
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">MC</div>
+      MC JHOSS
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="conductor.html" class="active">🏠 Inicio</a></li>
+      <li><a href="#">🗓️ Mis Rutas</a></li>
+      <li><a href="asientos.html">💺 Pasajeros</a></li>
+      <li><a href="#">📋 Checklist</a></li>
+      <li><a href="#">⚙️ Configuración</a></li>
+      <li><a href="login.html">🚪 Cerrar Sesión</a></li>
+    </ul>
+  </aside>
+
+  <main class="main-content">
+    <div class="page-header">
+      <h1>Bienvenido, Conductor López</h1>
+      <p>Panel del conductor - Consulta tus rutas y pasajeros asignados</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card blue">
+        <div class="stat-label">Rutas Hoy</div>
+        <div class="stat-value">1</div>
+      </div>
+      <div class="stat-card green">
+        <div class="stat-label">Rutas Semana</div>
+        <div class="stat-value">6</div>
+      </div>
+      <div class="stat-card orange">
+        <div class="stat-label">Pasajeros Hoy</div>
+        <div class="stat-value">38</div>
+      </div>
+      <div class="stat-card red">
+        <div class="stat-label">Kilómetros Mes</div>
+        <div class="stat-value">4,250</div>
+      </div>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Ruta asignada de hoy</span>
+          <span class="badge badge-success">Activo</span>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--gray-200);">
+            <span style="color: var(--gray-600);">Ruta</span>
+            <span style="font-weight: 700;">Lima → Trujillo</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--gray-200);">
+            <span style="color: var(--gray-600);">Bus</span>
+            <span style="font-weight: 700;">MC JHOSS Cama - B-124</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--gray-200);">
+            <span style="color: var(--gray-600);">Salida</span>
+            <span style="font-weight: 700;">08:00 PM</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--gray-200);">
+            <span style="color: var(--gray-600);">Llegada estimada</span>
+            <span style="font-weight: 700;">04:30 AM</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding: 0.75rem 0;">
+            <span style="color: var(--gray-600);">Pasajeros</span>
+            <span style="font-weight: 700;">38 / 40</span>
+          </div>
+        </div>
+        <a href="asientos.html" class="btn btn-primary btn-block">Ver Mapa de Asientos</a>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Próximas rutas</span>
+        </div>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Ruta</th>
+                <th>Salida</th>
+                <th>Bus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>16 Ago</td>
+                <td>Trujillo → Lima</td>
+                <td>09:00 PM</td>
+                <td>B-124</td>
+              </tr>
+              <tr>
+                <td>18 Ago</td>
+                <td>Lima → Chiclayo</td>
+                <td>07:30 PM</td>
+                <td>B-098</td>
+              </tr>
+              <tr>
+                <td>20 Ago</td>
+                <td>Chiclayo → Lima</td>
+                <td>08:00 PM</td>
+                <td>B-124</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mt-3">
+      <div class="card-header">
+        <span class="card-title">Lista de pasajeros - Lima → Trujillo</span>
+        <span class="badge badge-info">38 confirmados</span>
+      </div>
+      <div class="table-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Asiento</th>
+              <th>Pasajero</th>
+              <th>DNI</th>
+              <th>Método de Pago</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01</td>
+              <td>María Quispe</td>
+              <td>74561234</td>
+              <td>Tarjeta</td>
+              <td><span class="badge badge-success">A bordo</span></td>
+            </tr>
+            <tr>
+              <td>05</td>
+              <td>Jhoss Espinoza</td>
+              <td>70123456</td>
+              <td>Yape</td>
+              <td><span class="badge badge-success">A bordo</span></td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Carlos Ruiz</td>
+              <td>72345678</td>
+              <td>Efectivo</td>
+              <td><span class="badge badge-warning">Pendiente</span></td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>Ana García</td>
+              <td>71234567</td>
+              <td>Tarjeta</td>
+              <td><span class="badge badge-success">A bordo</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

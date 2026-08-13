@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutas y Buses - MC JHOSS</title>
+  <meta name="description" content="Busca y compara rutas de buses MC JHOSS. Encuentra el mejor precio y horario.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">MC</div>
+        MC JHOSS
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="rutas.html" class="active">Rutas</a></li>
+        <li><a href="asientos.html">Asientos</a></li>
+        <li><a href="pagos.html">Pagos</a></li>
+        <li><a href="login.html" class="btn btn-primary btn-sm">Iniciar Sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="page-header text-center">
+        <h1>Encuentra tu mejor bus</h1>
+        <p>Compara precios, horarios y comodidades para elegir tu viaje ideal</p>
+      </div>
+
+      <div class="card mb-4">
+        <div class="grid grid-4" style="align-items: end;">
+          <div class="form-group" style="margin-bottom: 0;">
+            <label class="form-label">Origen</label>
+            <select class="form-select">
+              <option>Lima</option>
+              <option>Trujillo</option>
+              <option>Chiclayo</option>
+              <option>Piura</option>
+              <option>Arequipa</option>
+            </select>
+          </div>
+          <div class="form-group" style="margin-bottom: 0;">
+            <label class="form-label">Destino</label>
+            <select class="form-select">
+              <option>Trujillo</option>
+              <option>Chiclayo</option>
+              <option>Piura</option>
+              <option>Arequipa</option>
+              <option>Lima</option>
+            </select>
+          </div>
+          <div class="form-group" style="margin-bottom: 0;">
+            <label class="form-label">Fecha</label>
+            <input type="date" class="form-control" value="2026-08-15">
+          </div>
+          <button class="btn btn-primary">Buscar Buses</button>
+        </div>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card bus-card">
+          <div class="bus-header">
+            <div>
+              <span class="bus-name">MC JHOSS Cama</span>
+              <p style="font-size: 0.875rem; color: var(--gray-500);">Salida: 08:00 PM</p>
+            </div>
+            <span class="bus-price">S/ 45</span>
+          </div>
+          <div class="bus-route">
+            <span>🕐 8h 30m</span>
+            <span>📍 Lima → Trujillo</span>
+          </div>
+          <div class="bus-features">
+            <span>WiFi</span>
+            <span>A/C</span>
+            <span>TV</span>
+            <span>USB</span>
+          </div>
+          <a href="asientos.html" class="btn btn-primary btn-block">Elegir Asientos</a>
+        </div>
+
+        <div class="card bus-card">
+          <div class="bus-header">
+            <div>
+              <span class="bus-name">MC JHOSS VIP</span>
+              <p style="font-size: 0.875rem; color: var(--gray-500);">Salida: 09:00 PM</p>
+            </div>
+            <span class="bus-price">S/ 65</span>
+          </div>
+          <div class="bus-route">
+            <span>🕐 8h 00m</span>
+            <span>📍 Lima → Trujillo</span>
+          </div>
+          <div class="bus-features">
+            <span>Cama 160°</span>
+            <span>WiFi</span>
+            <span>Snack</span>
+            <span>A/C</span>
+          </div>
+          <a href="asientos.html" class="btn btn-primary btn-block">Elegir Asientos</a>
+        </div>
+
+        <div class="card bus-card">
+          <div class="bus-header">
+            <div>
+              <span class="bus-name">MC JHOSS Económico</span>
+              <p style="font-size: 0.875rem; color: var(--gray-500);">Salida: 10:00 PM</p>
+            </div>
+            <span class="bus-price">S/ 35</span>
+          </div>
+          <div class="bus-route">
+            <span>🕐 9h 15m</span>
+            <span>📍 Lima → Trujillo</span>
+          </div>
+          <div class="bus-features">
+            <span>A/C</span>
+            <span>TV</span>
+          </div>
+          <a href="asientos.html" class="btn btn-primary btn-block">Elegir Asientos</a>
+        </div>
+
+        <div class="card bus-card">
+          <div class="bus-header">
+            <div>
+              <span class="bus-name">MC JHOSS Cama</span>
+              <p style="font-size: 0.875rem; color: var(--gray-500);">Salida: 07:00 PM</p>
+            </div>
+            <span class="bus-price">S/ 55</span>
+          </div>
+          <div class="bus-route">
+            <span>🕐 10h 15m</span>
+            <span>📍 Lima → Chiclayo</span>
+          </div>
+          <div class="bus-features">
+            <span>WiFi</span>
+            <span>A/C</span>
+            <span>TV</span>
+          </div>
+          <a href="asientos.html" class="btn btn-primary btn-block">Elegir Asientos</a>
+        </div>
+
+        <div class="card bus-card">
+          <div class="bus-header">
+            <div>
+              <span class="bus-name">MC JHOSS Super VIP</span>
+              <p style="font-size: 0.875rem; color: var(--gray-500);">Salida: 08:30 PM</p>
+            </div>
+            <span class="bus-price">S/ 80</span>
+          </div>
+          <div class="bus-route">
+            <span>🕐 9h 45m</span>
+            <span>📍 Lima → Chiclayo</span>
+          </div>
+          <div class="bus-features">
+            <span>Cama 180°</span>
+            <span>WiFi</span>
+            <span>Snack</span>
+            <span>USB</span>
+            <span>A/C</span>
+          </div>
+          <a href="asientos.html" class="btn btn-primary btn-block">Elegir Asientos</a>
+        </div>
+
+        <div class="card bus-card">
+          <div class="bus-header">
+            <div>
+              <span class="bus-name">MC JHOSS Cama</span>
+              <p style="font-size: 0.875rem; color: var(--gray-500);">Salida: 06:00 PM</p>
+            </div>
+            <span class="bus-price">S/ 70</span>
+          </div>
+          <div class="bus-route">
+            <span>🕐 13h 00m</span>
+            <span>📍 Lima → Piura</span>
+          </div>
+          <div class="bus-features">
+            <span>WiFi</span>
+            <span>A/C</span>
+            <span>TV</span>
+            <span>USB</span>
+          </div>
+          <a href="asientos.html" class="btn btn-primary btn-block">Elegir Asientos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        © 2026 MC JHOSS. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
